@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Joker's Arena Official Color Palette */
+  --deep-black: #0D0D0D;
+  --joker-neon-green: #39FF14;
+  --electric-purple: #9A00FF;
+  --blood-red: #FF0033;
+  --soft-light-gray: #F5F5F5;
+  --jackpot-gold: #FFD700;
+  --neon-yellow: #FFF300;
+  
+  /* Tailwind CSS integration */
+  --background: 0 0% 5%;
+  --foreground: 0 0% 96%;
+  --card: 0 0% 8%;
+  --card-foreground: 0 0% 96%;
+  --popover: 0 0% 8%;
+  --popover-foreground: 0 0% 96%;
+  --primary: 120 100% 55%;
+  --primary-foreground: 0 0% 5%;
+  --secondary: 280 100% 50%;
+  --secondary-foreground: 0 0% 96%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 60 100% 50%;
+  --accent-foreground: 0 0% 5%;
+  --destructive: 348 100% 60%;
+  --destructive-foreground: 0 0% 96%;
+  --border: 0 0% 20%;
+  --input: 0 0% 15%;
+  --ring: 120 100% 55%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(271, 91%, 65%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: var(--deep-black);
+    color: var(--soft-light-gray);
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', monospace;
+  }
+  
+  .glass-card {
+    background: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--electric-purple);
+    box-shadow: 0 8px 32px rgba(154, 0, 255, 0.2);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, var(--joker-neon-green), var(--jackpot-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .cyberpunk-border {
+    position: relative;
+    background: linear-gradient(45deg, var(--joker-neon-green), var(--electric-purple));
+    padding: 2px;
+    border-radius: 12px;
+  }
+  
+  .cyberpunk-border-inner {
+    background: var(--deep-black);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-bg {
+    background: radial-gradient(ellipse at center, rgba(57, 255, 20, 0.1) 0%, rgba(13, 13, 13, 0.95) 70%),
+                linear-gradient(135deg, rgba(154, 0, 255, 0.08) 0%, var(--deep-black) 100%);
+  }
+  
+  .casino-atmosphere {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(57, 255, 20, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(154, 0, 255, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
+  }
+  
+  .floating-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--joker-neon-green);
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.8;
+    box-shadow: 0 0 6px var(--joker-neon-green);
+  }
+  
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% { 
+      transform: translateY(-30px) rotate(180deg);
+    }
+  }
+  
+  @keyframes glow {
+    from { 
+      text-shadow: 0 0 20px var(--joker-neon-green), 0 0 30px var(--joker-neon-green), 0 0 40px var(--joker-neon-green);
+    }
+    to { 
+      text-shadow: 0 0 30px var(--jackpot-gold), 0 0 40px var(--jackpot-gold), 0 0 50px var(--jackpot-gold);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from { 
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { 
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-slideInUp {
+    animation: slideInUp 0.8s ease-out;
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 0.8s ease-out;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.8s ease-out;
+  }
+  
+  .animate-scaleIn {
+    animation: scaleIn 0.8s ease-out;
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Joker's Arena Premium Effects */
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px var(--joker-neon-green);
+  }
+  
+  .border-glow {
+    border: 1px solid var(--electric-purple);
+    box-shadow: 0 0 10px rgba(154, 0, 255, 0.4);
+  }
+  
+  .win-effect {
+    animation: winPulse 0.8s ease-out;
+    color: var(--jackpot-gold);
+    text-shadow: 0 0 15px var(--jackpot-gold);
+  }
+  
+  .lose-effect {
+    animation: loseShake 0.6s ease-out;
+    color: var(--blood-red);
+    text-shadow: 0 0 10px var(--blood-red);
+  }
+  
+  @keyframes winPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes loseShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+}
