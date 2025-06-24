@@ -1,0 +1,102 @@
+Build a modern web casino for the $JOKER token on Solana, with full wallet integration (Phantom, Solflare, Backpack, etc.). This casino is part of a larger presentation site and must be embedded as a page from that site.
+
+🎮 General Requirements:
+Solana wallet connection: support Phantom, Solflare, Backpack, etc.
+
+Email + wallet login required
+
+Token used: $JOKER on Solana (jKRBhCZMmphh3GZb8ELS7VuPvwM5bzgigNjurXrsuTi)
+
+Wallet used for deposits/withdrawals: jkrtQ5V9FpZw2wxzAVJx6SaNzfz6h9aZkv3HUdaS3B4
+
+When a user sends tokens to this wallet, update their balance (manually or via Solana API polling)
+
+8% tax on every transfer — calculate and credit net tokens received
+
+💸 Core Features:
+Show real-time $JOKER balance
+
+Deposit instructions (send to presale wallet, auto-track via transaction scanner)
+
+Withdraw form (manual approval, saved to admin dashboard)
+
+🎰 Games (off-chain logic):
+Coin Flip (heads/tails, 50/50)
+
+Number Roll (1-100) – user picks target under which they win
+
+⚙️ Admin Panel:
+View all registered users
+
+See balances and deposit history
+
+See and approve withdrawal requests
+
+🌐 Integration:
+Embed into existing presentation website (as a separate page /casino)
+
+Shared navigation/header with the main site
+
+Mobile responsive, fully styled with Joker theme (neon, chaotic dark UI)
+
+🧠 Stack:
+Frontend: HTML, CSS, JS, Web3.js / Solana wallet adapter
+
+Backend: Node.js with Express
+
+DB: MongoDB or simple JSON-based storage
+
+Use public Solana APIs (Solana RPC, SolScan, etc.) to track deposits
+
+3 hours ago
+RM
+
+ropetreamihai
+I understand you want to build a comprehensive web casino for the $JOKER token on Solana with wallet integration, gaming features, and an admin panel. However, I need to inform you that this project involves several components that are outside our available technology stacks.
+
+I cannot implement this Solana casino project as specified because it requires MongoDB, which is in our blocklist of dependencies. Additionally, the project involves complex blockchain integrations and cryptocurrency handling that would require specialized infrastructure and security considerations beyond our current capabilities.
+
+Specific blocking issues:
+
+MongoDB database requirement (explicitly blocked)
+Complex Solana blockchain integrations requiring specialized APIs
+Cryptocurrency transaction handling and security requirements
+Real-money gambling functionality with financial compliance needs
+Alternative suggestions:
+
+Demo Casino Game: I could create a simplified casino-style game interface without real cryptocurrency integration, using our supported stacks (React + Express or Flask)
+Wallet Connection Demo: Build a basic wallet connection interface that demonstrates the UI/UX without actual blockchain transactions
+Gaming Interface: Create the visual casino games (coin flip, number roll) with mock tokens and balances
+Would you like me to create a demo version of the casino interface using one of our supported technology stacks instead? This would give you a functional prototype that could later be enhanced with the blockchain functionality by specialized developers.
+
+ok, use something else than mongo db, something simpler, and just leave info in code i will implement everything about solana by hand after
+
+3 hours ago
+RM
+
+ropetreamihai
+Perfect! I'll create a casino interface with simplified data storage and placeholder sections for your Solana integration. This will give you a solid foundation to build upon.
+
+Plan
+about 3 hours ago
+I want a clean, modern casino app experience — not just a basic game drop-in.
+
+Please include:
+
+A custom login page (wallet + email)
+
+A separate registration page
+
+A main menu/dashboard where users can choose between available games
+
+Each game should be highly visual, smooth, and fully themed for Joker’s Arena (dark, neon, chaotic style)
+
+All UI/UX should feel premium and professionally designed, with animations, sound effects (optional), and smooth transitions
+
+The entire flow — from login to gameplay — should reflect the unique branding of Joker's Arena and feel immersive and engaging.
+
+3 hours ago
+RM
+
+ropetreamihai
+Excellent! I'll create a premium, immersive casino experience with the complete user journey and professional Joker's Arena branding.
