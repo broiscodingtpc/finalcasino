@@ -4,8 +4,8 @@ import { Link } from "wouter";
 
 const whitepaperHighlights = [
   {
-    title: "Loyalty Airdrop",
-    description: "Snapshot at $1M MC",
+    title: "Community Rewards",
+    description: "Earn through gameplay",
     icon: "fas fa-gift"
   },
   {

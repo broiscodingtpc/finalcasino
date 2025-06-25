@@ -21,7 +21,7 @@ const roadmapPhases = [
   },
   {
     phase: "PHASE 4",
-    title: "Staking + Airdrops",
+    title: "Staking + Rewards",
     description: "Reward system and passive income",
     icon: "fas fa-coins"
   },
