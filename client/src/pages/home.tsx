@@ -6,7 +6,6 @@ import LegalCompanyInfo from "@/components/legal-company-info";
 import TokenChart from "@/components/token-chart";
 import RoadmapSection from "@/components/roadmap-section";
 import WhitepaperSection from "@/components/whitepaper-section";
-import PartnersSection from "@/components/partners-section";
 import Footer from "@/components/footer";
 import SEOHead from "@/components/seo-head";
 
@@ -32,7 +31,6 @@ export default function Home() {
       <TokenChart />
       <RoadmapSection />
       <WhitepaperSection />
-      <PartnersSection />
       <Footer />
     </div>
   );

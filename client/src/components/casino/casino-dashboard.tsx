@@ -298,14 +298,17 @@ export default function CasinoDashboard({ user, balance, onSelectGame }: CasinoD
             <p className="text-gray-400 mb-2">Send $JOKERS tokens to:</p>
             <div className="flex items-center justify-between bg-gray-900 rounded p-3">
               <span className="font-mono text-sm">jkrtQ5V9FpZw2wxzAVJx6SaNzfz6h9aZkv3HUdaS3B4</span>
-              <Button size="sm" className="bg-gray-700 hover:bg-gray-600">
-                <i className="fas fa-copy"></i>
-              </Button>
+              <button 
+                onClick={() => navigator.clipboard.writeText('jkrtQ5V9FpZw2wxzAVJx6SaNzfz6h9aZkv3HUdaS3B4')}
+                className="ml-2 px-3 py-1 bg-gray-700 hover:bg-gray-600 rounded text-sm transition-colors"
+              >
+                Copy
+              </button>
             </div>
+            <p className="text-xs text-gray-500 mt-2">
+              Send tokens to this address to add them to your casino balance.
+            </p>
           </div>
-          <p className="text-xs text-gray-500 text-center">
-            * 8% tax applies to all transfers. Your balance will be updated automatically.
-          </p>
         </motion.div>
       </div>
     </motion.div>

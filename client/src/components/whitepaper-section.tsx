@@ -9,14 +9,37 @@ const whitepaperHighlights = [
     icon: "fas fa-gift"
   },
   {
-    title: "8% Tax = Real SOL Rewards",
-    description: "Via RevShare integration",
+    title: "Zero Tax",
+    description: "No transfer fees",
     icon: "fas fa-percent"
   },
   {
     title: "No Vesting for Devs",
     description: "Pure chaos mode",
     icon: "fas fa-unlock"
+  }
+];
+
+const features = [
+  {
+    icon: "fas fa-gamepad",
+    title: "Premium Gaming Experience",
+    description: "High-quality casino games with stunning visuals"
+  },
+  {
+    icon: "fas fa-wallet",
+    title: "Phantom Wallet Integration",
+    description: "Seamless Solana wallet connectivity"
+  },
+  {
+    icon: "fas fa-shield-alt",
+    title: "Secure & Transparent",
+    description: "Blockchain-based transparency and security"
+  },
+  {
+    icon: "fas fa-mobile-alt",
+    title: "Mobile Optimized",
+    description: "Perfect gaming experience on all devices"
   }
 ];
 

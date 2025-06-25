@@ -9,8 +9,8 @@ const roadmapPhases = [
   },
   {
     phase: "PHASE 2",
-    title: "LP Launch",
-    description: "Revshare.dev integration and trading begins",
+    title: "Trading Launch",
+    description: "Token trading begins on DEXs",
     icon: "fas fa-chart-line"
   },
   {
@@ -27,8 +27,8 @@ const roadmapPhases = [
   },
   {
     phase: "PHASE 5",
-    title: "Chaos Utility Expansion",
-    description: "Advanced features and partnerships",
+    title: "Utility Expansion",
+    description: "Advanced features and ecosystem growth",
     icon: "fas fa-expand"
   }
 ];

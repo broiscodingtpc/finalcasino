@@ -254,7 +254,7 @@ export default function Whitepaper() {
                     <div>
                       <ul className="space-y-2">
                         <li>• <strong>80%</strong> - Gaming Rewards & Liquidity</li>
-                        <li>• <strong>15%</strong> - Marketing & Partnerships</li>
+                        <li>• <strong>15%</strong> - Marketing & Development</li>
                         <li>• <strong>5%</strong> - Reserve Fund</li>
                       </ul>
                     </div>
@@ -380,7 +380,6 @@ export default function Whitepaper() {
                     <li>• Game addition proposals</li>
                     <li>• Platform fee adjustments</li>
                     <li>• Revenue distribution decisions</li>
-                    <li>• Partnership approvals</li>
                     <li>• Technical upgrade voting</li>
                     <li>• Community event planning</li>
                   </ul>
